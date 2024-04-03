@@ -1,0 +1,73 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: white;
+}
+.header-animation.header {
+    animation-name: slidefromside;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+}
+@keyframes slidefromside {
+    from {
+        transform: translateX(-800px);
+        color: blue;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slidefromright {
+    from {
+        transform: translateX(800px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes checkreposgithub {
+    from {
+        top: 4300px;
+    }
+    to {
+        top: 0px;
+    }
+}
+.animation-p.p {
+    animation-name: slidefromright;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+#repository-name {
+    width: 365px;
+    height: 26px;
+    font-size: medium;
+    border-radius: 4px;
+    border: none;
+}
+.githubanimation {
+    animation: checkreposgithub 4s ease-out;
+    cursor: pointer;
+    position: relative;
+}
+.delete_btn {
+    width: 187px;
+    height: 33px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: medium;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.del:hover {
+    background-color: darkred;
+}
